@@ -1,0 +1,16 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import './utils/variables';
+@import './utils/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC&family=Shrikhand&family=Saira+Extra+Condensed&display=swap');
+
+@import './mixin/media.scss';
+@import './base/base';
+@import './components/item-card';
+
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+
+@import './pages/index.scss';
+
+@import "../../node_modules/bootstrap";
