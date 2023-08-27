@@ -1,42 +1,42 @@
 @import "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0";
 
-.ff-shrikhand{
-    font-family: 'Shrikhand'!important;
+.ff-shrikhand {
+    font-family: 'Shrikhand' !important;
 }
 
-.ff-saira{
-    font-family: 'Saira Extra Condensed', sans-serif!important;
+.ff-saira {
+    font-family: 'Saira Extra Condensed', sans-serif !important;
 }
 
 
-.fw-350{
-    font-weight: 350!important;
+.fw-350 {
+    font-weight: 350 !important;
 }
 
-.fw-500{
-    font-weight: 500!important;
+.fw-500 {
+    font-weight: 500 !important;
 }
 
-.letter-spacing-s{
-    letter-spacing: 1.6px; 
+.letter-spacing-s {
+    letter-spacing: 1.6px;
 }
 
-a{
+a {
     cursor: pointer;
 }
 
-.container {    
-    max-width: 1944px !important;
-    padding-left: 12px !important;
-    padding-right: 12px !important;
+// .container {
+//     max-width: 1944px !important;
+//     padding-left: 12px !important;
+//     padding-right: 12px !important;
 
-    @include mobile {
-        padding-left: 16px !important;
-        padding-right: 16px !important;
-    }
-}
+//     @include mobile {
+//         padding-left: 16px !important;
+//         padding-right: 16px !important;
+//     }
+// }
 
 
-.container-s {    
-    max-width: 1296px !important;
-}
+// .container-s {
+//     max-width: 1296px !important;
+// }
