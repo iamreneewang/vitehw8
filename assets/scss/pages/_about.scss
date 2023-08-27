@@ -4,4 +4,30 @@
     h2 {
         letter-spacing: 48px;
     }
+
+    img {
+        max-height: 280px;
+        object-fit: cover;
+
+        @include pad() {
+            min-height: 280px;
+        }
+    }
+}
+
+.position {
+    button:hover {
+        background-color: $primary;
+        color: $white;
+    }
+}
+
+.service {
+    p:nth-child(1) {
+        max-width: 758px;
+    }
+
+    p:nth-child(2) {
+        max-width: 580px;
+    }
 }
