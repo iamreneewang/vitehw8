@@ -1,54 +1,72 @@
-.item-card{
+.item-card {
 
     .fs-md-32 {
         @media (min-width: 768px) {
             font-size: 32px;
         }
     }
-    
+
     .fs-m {
         font-size: 128px;
     }
-    
+
     .fs-md-l {
         @media (min-width: 768px) {
             font-size: 400px;
         }
     }
-    
+
     .mb-16 {
         margin-bottom: 16px;
     }
-    
+
     .mb-18 {
         margin-bottom: 18px;
     }
-    
+
     .mb-md-20 {
         @media (min-width: 768px) {
             margin-bottom: 20px;
         }
     }
-    
+
     .mb-md-80 {
         @media (min-width: 768px) {
             margin-bottom: 80px;
         }
     }
-    
+
+
+
     .card {
         padding: 24px 12px;
         background-color: #000;
         background-blend-mode: darken;
-        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/vito.png?raw=true);
         background-size: cover;
         background-position: center;
         transition: all 1s;
-    
-        @media (min-width: 768px) {
-            padding: 24px 40px 56px;
+
+        &-1 {
+            background-image: url(/assets/images/diane.png);
         }
-    
+
+        &-2 {
+            background-image: url(/assets/images/felix.png);
+        }
+
+        &-3 {
+            background-image: url(/assets/images/karina.png);
+        }
+
+        &-4 {
+            background-image: url(/assets/images/vito.png);
+        }
+
+
+         @media (min-width: 768px) {
+             padding: 24px 40px 56px;
+         }
+
         &:hover {
             background-color: rgba(0, 0, 0, 0.5);
         }
