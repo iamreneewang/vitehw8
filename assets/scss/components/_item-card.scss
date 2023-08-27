@@ -40,7 +40,7 @@
 
     .card {
         padding: 24px 12px;
-        background-color: #000;
+        background-color: transparent;
         background-blend-mode: darken;
         background-size: cover;
         background-position: center;
@@ -69,6 +69,11 @@
 
         &:hover {
             background-color: rgba(0, 0, 0, 0.5);
+
+        }
+
+        @media (min-width: 768px) {
+            background-color: #000;
         }
     }
 }
