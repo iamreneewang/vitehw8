@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>index</title>
-  <script type="module" crossorigin src="/vitehw8/assets/main-cb230ddc.js"></script>
-  <link rel="stylesheet" href="/vitehw8/assets/main-71e790c1.css">
+  <script type="module" crossorigin src="/vitehw8/assets/main-4b94aa2c.js"></script>
+  <link rel="stylesheet" href="/vitehw8/assets/main-85d32d26.css">
 </head>
 
 <body>
@@ -26,7 +26,7 @@
         <li><a href="about.html" class="text-white fw-500">關於我們</a></li>
         <li><a href="#" class="text-white fw-500">最新消息</a></li>
         <li><a href="#" class="text-white fw-500">FAQ</a></li>
-        <li><a href="#" class="text-white fw-500">聯絡我們</a></li>
+        <li><a href="contact.html" class="text-white fw-500">聯絡我們</a></li>
       </ul>
 
       <ul class="list-unstyled d-md-flex align-items-center mb-0 gap-24 d-none">
@@ -59,8 +59,8 @@
 
 </header>
 <!-- hamburgerMenu -->
-<div class="container collapse position-absolute d-md-none  start-0 mx-0" id="hamburgerMenu"
-  style="z-index: 10000;  background: linear-gradient(#7000FF, #11002D);;">
+<div class="collapse position-absolute d-md-none start-0 mx-0 w-100" id="hamburgerMenu"
+  style="z-index: 10000;  background: linear-gradient(#7000FF, #11002D);">
   <ul class="navbar-nav me-auto mb-32 d-flex flex-column gap-20  align-items-center mt-24">
     <li class="nav-item py-8">
       <a class="nav-link text-white fw-500">產品</a>
@@ -75,7 +75,7 @@
       <a class="nav-link text-white fw-500" href="#">FAQ</a>
     </li>
     <li class="nav-item py-8">
-      <a class="nav-link text-white fw-500" href="#">聯絡我們</a>
+      <a class="nav-link text-white fw-500" href="contact.html">聯絡我們</a>
     </li>
     <li class="nav-item py-8">
       <a class="nav-link text-white fw-500" href="#">註冊</a>
@@ -91,13 +91,51 @@
     </li>
   </ul>
 </div>
-    <div class="home-background">
+<div class="home-background">
 
+</div>
+
+    <!-- section -->
+    <div style="background-color:#1F0F39;">
+      <div class="container  py-md-144 pt-60 pb-80">
+        <div class="row">
+          <div class="col-md-5 col-12">
+            <h2 class="fs-md-48 fs-40 letter-spacing-48 text-white fw-bold">聯絡我們</h2>
+            <div class="d-flex gap-8 mt-20 mb-md-54 mb-36">
+              <div class="bg-white rounded-circle" style="height:12px;width:12px;"></div>
+              <div class="bg-white rounded-2 mb-54" style="height:12px;width:124px;"></div>
+            </div>
+            <p class="fw-bold text-white mb-4">讓科技成為您的最佳夥伴</p>
+            <p class="fw-bold text-white ">立即體驗神奇功能並享限時優惠！</p>
+          </div>
+        
+          <div class="col-md-7 col-12 mt-md-0 mt-24">
+            <span class="material-symbols-outlined fs-80 mb-16 text-white"> emergency </span>
+              <div class="form-floating mb-16">
+                <input type="email" class="form-control align-middle" id="email" placeholder="EMAIL">
+                <label for="email" class="fs-20 dark-1F0F39">Email address</label>
+              </div>
+              <div class="form-floating mb-16">
+                <textarea class="form-control" placeholder="COMMENTS" id="comments"
+                  style="height: 120px; resize: none;"></textarea>
+                <label for="comments" class="fs-20 dark-1F0F39">Comments</label>
+              </div>
+          </div>
+          <div class="col-md-4 ms-md-auto col-12">
+            <button
+              class="btn w-100 btn-primary py-8 gap-4 d-flex align-items-center rounded-1 fw-500 justify-content-center">
+              <span class="material-symbols-outlined fs-24 text-white align-middle"> point_scan </span>
+              送出
+            </button>         
+          </div>
+    
+        </div>
+      </div>
     </div>
 
 
+    <!-- section -->
     <div class="item-card">
-
       <ol class="list-unstyled d-flex flex-wrap">
         <li class="col-6 col-lg-3">
           <a href="#" class="card card-1 border-0 rounded-0">
@@ -164,13 +202,12 @@
           </a>
         </li>
       </ol>
-
     </div>
 
 
 
 
-      <footer class="bg-white">
+    <footer class="bg-white">
   <div class="container p-md-0 p-40">
     <div class="d-flex  justify-content-between mx-auto flex-md-row flex-column justify-content-start">
       <div class="d-flex  align-items-md-center">
@@ -206,7 +243,7 @@
   </div>
 </footer>
 
-        
+      
 </body>
 
 </html>
