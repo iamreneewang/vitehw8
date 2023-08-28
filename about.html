@@ -5,23 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>about</title>
-    <script type="module" crossorigin src="/vitehw8/assets/main-495d5f0a.js"></script>
-    <link rel="stylesheet" href="/vitehw8/assets/main-b4366b98.css">
+    <script type="module" crossorigin src="/vitehw8/assets/main-bdbb4e49.js"></script>
+    <link rel="stylesheet" href="/vitehw8/assets/main-5cf96c39.css">
   </head>
   <body>
     <!-- ////header///// -->
-    <header class="bg-primary border-bottom border-1 border-white">
+    <header class="bg-primary border-bottom border-1 border-white position-relative">
   <div class="container">
-    <div
-      class="container-s d-flex align-items-center justify-content-between py-16 mx-auto"
-    >
+    <div class="container-s d-flex align-items-center justify-content-between py-16 mx-auto">
       <div class="d-flex align-items-center">
         <a href="index.html" class="d-flex align-items-center">
           <h1 class="text-white fs-32 ff-shrikhand">ALPHABOX+</h1>
         </a>
       </div>
 
-      <ul class="list-unstyled d-flex align-items-center mb-0 gap-40">
+
+      <ul class="list-unstyled d-md-flex align-items-center mb-0 gap-40 d-md-block d-none">
         <li><a href="#" class="text-white fw-500">產品</a></li>
         <li><a href="about.html" class="text-white fw-500">關於我們</a></li>
         <li><a href="#" class="text-white fw-500">最新消息</a></li>
@@ -29,7 +28,7 @@
         <li><a href="#" class="text-white fw-500">聯絡我們</a></li>
       </ul>
 
-      <ul class="list-unstyled d-flex align-items-center mb-0 gap-24">
+      <ul class="list-unstyled d-md-flex align-items-center mb-0 gap-24 d-none">
         <li>
           <a href="#" class="text-white fw-500">註冊</a>
         </li>
@@ -38,8 +37,7 @@
         </li>
         <li>
           <button
-            class="btn w-100 btn-white ms-8 px-12 py-8 gap-4 d-flex align-items-center btn-white rounded-1 fw-500"
-          >
+            class="btn w-100 btn-white ms-8 px-12 py-8 gap-4 d-flex align-items-center btn-white rounded-1 fw-500">
             <span class="material-symbols-outlined"> point_scan </span>
             訂閱
           </button>
@@ -47,28 +45,138 @@
       </ul>
 
       <!-- hamburgerMenu -->
-      <!-- <div class="d-md-none d-block">
-            <a class="btn btn-outline-primary rounded" data-bs-toggle="collapse" href="#hamburgerMenu" role="button"
-                aria-expanded="false" aria-controls="collapseExample">
-                <i class="icofont-navigation-menu"></i>
-            </a>
-        </div> -->
+      <div class="d-md-none d-block">
+        <a class="btn text-white" data-bs-toggle="collapse" href="#hamburgerMenu" role="button" aria-expanded="false"
+          aria-controls="collapseExample">
+          <span class="material-symbols-outlined  fs-44">
+            menu
+          </span>
+        </a>
+      </div>
     </div>
   </div>
-</header>
 
-    <section class="about text-white">
-      <div class="container container-s py-160">
-        <h2 class="fs-40 fs-lg-48 fw-bold pb-32">關於我們</h2>
-        <div class="d-flex justify-content-lg-between">
-          <p class="text-start">
+</header>
+<!-- hamburgerMenu -->
+<div class="container collapse position-absolute d-md-none  start-0 mx-0" id="hamburgerMenu"
+  style="z-index: 10000;  background: linear-gradient(#7000FF, #11002D);;">
+  <ul class="navbar-nav me-auto mb-32 d-flex flex-column gap-20  align-items-center mt-24">
+    <li class="nav-item py-8">
+      <a class="nav-link text-white fw-500">產品</a>
+    </li>
+    <li class="nav-item py-8">
+      <a class="nav-link text-white fw-500" href="about.html">關於我們</a>
+    </li>
+    <li class="nav-item py-8">
+      <a class="nav-link text-white fw-500" href="#">最新消息</a>
+    </li>
+    <li class="nav-item py-8">
+      <a class="nav-link text-white fw-500" href="#">FAQ</a>
+    </li>
+    <li class="nav-item py-8">
+      <a class="nav-link text-white fw-500" href="#">聯絡我們</a>
+    </li>
+    <li class="nav-item py-8">
+      <a class="nav-link text-white fw-500" href="#">註冊</a>
+    </li>
+    <li class="nav-item py-8">
+      <a class="nav-link text-white fw-500" href="#">登入</a>
+    </li>
+    <li class="nav-item py-8">
+      <button class="btn w-100 btn-white ms-8 px-12 py-8 gap-4 d-flex align-items-center btn-white rounded-1 fw-500">
+        <span class="material-symbols-outlined fs-24"> point_scan </span>
+        訂閱
+      </button>
+    </li>
+  </ul>
+</div>
+    <section class="about text-white py-60 py-lg-160">
+      <div class="container">
+        <h2 class="fs-40 fs-lg-48 fw-bold mb-24 mb-lg-32">關於我們</h2>
+        <div class="row justify-content-between">
+          <p class="col-12 col-lg-6 mb-32">
             創立於2021年，我們的使命是將科技與人性化設計相結合，為您打造最佳的3D立體投影陪伴機器人。憑藉創新的技術、卓越的研發團隊以及對品質的追求，我們致力於為全球用戶提供最先進且易用的陪伴機器人。
           </p>
-          <p class="text-end">
-            我們擁抱變革，追求技術創新，以提供更卓越的產品給全球用戶。<br />我們始終以用戶需求為核心，致力於提供最滿意的產品與服務。
-            <br />我們堅持高品質標準，確保每一款產品都經過嚴格的測試與品質把控。
-            <br />我們重視團隊協作，鼓勵創意交流，共同為實現願景而努力。
+          <div class="col-12 col-lg-6 text-end fs-14">
+            <p class="mb-24 mb-lg-0">
+              我們擁抱變革，追求技術創新，以提供更卓越的產品給全球用戶。
+            </p>
+            <p class="mb-24 mb-lg-0">
+              我們始終以用戶需求為核心，致力於提供最滿意的產品與服務。
+            </p>
+            <p class="mb-24 mb-lg-0">
+              我們堅持高品質標準，確保每一款產品都經過嚴格的測試與品質把控。
+            </p>
+            <p>我們重視團隊協作，鼓勵創意交流，共同為實現願景而努力。</p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="/vitehw8/assets/about_us-33d22104.png"
+        alt="關於我們"
+        class="w-100 h-100 mt-36 mb-44 d-none d-lg-block"
+      />
+      <img
+        src="/vitehw8/assets/about_us_mobile-3df0b943.png"
+        alt="關於我們"
+        class="w-100 h-100 mt-36 mb-44 d-lg-none"
+      />
+      <div class="container">
+        <div
+          class="col-12 col-lg-8 d-flex flex-column flex-lg-row align-items-center mx-auto"
+        >
+          <span class="material-icons fs-80 me-25 mb-8"> emergency </span>
+          <p>
+            我們相信科技的力量能夠改變人類生活。通過不斷創新與優化，我們期待為您打造一款具有高度智能、豐富功能且呈現真實感的3D立體投影陪伴機器人，讓科技成為您生活中真誠的夥伴。
           </p>
+        </div>
+      </div>
+    </section>
+    <section class="service container-wide py-24">
+      <div
+        class="d-flex justify-content-between border-bottom border-1 border-black mb-24 pb-80"
+      >
+        <p>
+          我們提供多款3D立體投影陪伴機器人，涵蓋知識型、娛樂型、生活型和情感型等不同類別，以滿足您的各種需求。每款產品都經過精心設計，具備高度智能化、多功能和人性化操作等特點，讓您在日常生活中獲得更便利的陪伴體驗。
+        </p>
+        <p>此外，我們還提供完善的售後服務，包括</p>
+      </div>
+      <div class="border-bottom border-12 border-black"></div>
+    </section>
+    <section class="py-60 py-lg-160">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-7">
+            <img
+              src="/vitehw8/assets/meeting-4557f5ab.png"
+              alt="meeting"
+              class="w-100 mb-16 mb-lg-0"
+            />
+          </div>
+          <div class="col-12 col-lg-5">
+            <p>
+              展望未來，我們將繼續投入研發，引領3D立體投影陪伴機器人技術的發展。通過結合虛擬現實、擴增現實和人工智能等領域的最新技術，我們將努力為用戶帶來更多前所未有的創新體驗。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="position bg-black text-white py-48 py-lg-24 px-12">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12 col-lg-8 mb-24 mb-lg-0">
+          <p>
+            我們熱忱歡迎有志之士加入我們的團隊，共同創造更美好的未來。如果您對科技充滿熱情，並擁有相關領域的專業知識，請隨時查看我們的招聘信息或與我們聯繫，讓我們攜手共進。
+          </p>
+        </div>
+        <div class="col-12 col-lg-2">
+          <button
+            type="button"
+            class="btn btn-white w-100 d-flex align-items-center justify-content-center border-0 rounded-1 py-8"
+          >
+            <span class="material-symbols-outlined me-4"> point_scan </span
+            >查看職缺
+          </button>
         </div>
       </div>
     </section>

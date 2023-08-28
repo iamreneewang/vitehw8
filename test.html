@@ -6,23 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>測試</title>
-  <script type="module" crossorigin src="/vitehw8/assets/main-495d5f0a.js"></script>
-  <link rel="stylesheet" href="/vitehw8/assets/main-b4366b98.css">
+  <script type="module" crossorigin src="/vitehw8/assets/main-bdbb4e49.js"></script>
+  <link rel="stylesheet" href="/vitehw8/assets/main-5cf96c39.css">
 </head>
 
 <body>
-    <header class="bg-primary border-bottom border-1 border-white">
+    <header class="bg-primary border-bottom border-1 border-white position-relative">
   <div class="container">
-    <div
-      class="container-s d-flex align-items-center justify-content-between py-16 mx-auto"
-    >
+    <div class="container-s d-flex align-items-center justify-content-between py-16 mx-auto">
       <div class="d-flex align-items-center">
         <a href="index.html" class="d-flex align-items-center">
           <h1 class="text-white fs-32 ff-shrikhand">ALPHABOX+</h1>
         </a>
       </div>
 
-      <ul class="list-unstyled d-flex align-items-center mb-0 gap-40">
+
+      <ul class="list-unstyled d-md-flex align-items-center mb-0 gap-40 d-md-block d-none">
         <li><a href="#" class="text-white fw-500">產品</a></li>
         <li><a href="about.html" class="text-white fw-500">關於我們</a></li>
         <li><a href="#" class="text-white fw-500">最新消息</a></li>
@@ -30,7 +29,7 @@
         <li><a href="#" class="text-white fw-500">聯絡我們</a></li>
       </ul>
 
-      <ul class="list-unstyled d-flex align-items-center mb-0 gap-24">
+      <ul class="list-unstyled d-md-flex align-items-center mb-0 gap-24 d-none">
         <li>
           <a href="#" class="text-white fw-500">註冊</a>
         </li>
@@ -39,8 +38,7 @@
         </li>
         <li>
           <button
-            class="btn w-100 btn-white ms-8 px-12 py-8 gap-4 d-flex align-items-center btn-white rounded-1 fw-500"
-          >
+            class="btn w-100 btn-white ms-8 px-12 py-8 gap-4 d-flex align-items-center btn-white rounded-1 fw-500">
             <span class="material-symbols-outlined"> point_scan </span>
             訂閱
           </button>
@@ -48,16 +46,51 @@
       </ul>
 
       <!-- hamburgerMenu -->
-      <!-- <div class="d-md-none d-block">
-            <a class="btn btn-outline-primary rounded" data-bs-toggle="collapse" href="#hamburgerMenu" role="button"
-                aria-expanded="false" aria-controls="collapseExample">
-                <i class="icofont-navigation-menu"></i>
-            </a>
-        </div> -->
+      <div class="d-md-none d-block">
+        <a class="btn text-white" data-bs-toggle="collapse" href="#hamburgerMenu" role="button" aria-expanded="false"
+          aria-controls="collapseExample">
+          <span class="material-symbols-outlined  fs-44">
+            menu
+          </span>
+        </a>
+      </div>
     </div>
   </div>
-</header>
 
+</header>
+<!-- hamburgerMenu -->
+<div class="container collapse position-absolute d-md-none  start-0 mx-0" id="hamburgerMenu"
+  style="z-index: 10000;  background: linear-gradient(#7000FF, #11002D);;">
+  <ul class="navbar-nav me-auto mb-32 d-flex flex-column gap-20  align-items-center mt-24">
+    <li class="nav-item py-8">
+      <a class="nav-link text-white fw-500">產品</a>
+    </li>
+    <li class="nav-item py-8">
+      <a class="nav-link text-white fw-500" href="about.html">關於我們</a>
+    </li>
+    <li class="nav-item py-8">
+      <a class="nav-link text-white fw-500" href="#">最新消息</a>
+    </li>
+    <li class="nav-item py-8">
+      <a class="nav-link text-white fw-500" href="#">FAQ</a>
+    </li>
+    <li class="nav-item py-8">
+      <a class="nav-link text-white fw-500" href="#">聯絡我們</a>
+    </li>
+    <li class="nav-item py-8">
+      <a class="nav-link text-white fw-500" href="#">註冊</a>
+    </li>
+    <li class="nav-item py-8">
+      <a class="nav-link text-white fw-500" href="#">登入</a>
+    </li>
+    <li class="nav-item py-8">
+      <button class="btn w-100 btn-white ms-8 px-12 py-8 gap-4 d-flex align-items-center btn-white rounded-1 fw-500">
+        <span class="material-symbols-outlined fs-24"> point_scan </span>
+        訂閱
+      </button>
+    </li>
+  </ul>
+</div>
         <div class="container">
             <nav aria-label="Page navigation">
                 <ul class="pagination mb-0">
@@ -99,9 +132,13 @@
                 align-items: center;
               } -->
             <p class="fs-lg-60 fs-md-48 fs-24 p-40">文字大小</p>
-            <p class="fs-lg-60 fs-md-48 fs-24 p-40 ff-shrikhand">ALPHABOX+</p>
+            <p class="fs-lg-60 fs-md-48 fs-16 p-40 ff-shrikhand">ALPHABOX+</p>
             <span class="material-symbols-outlined">
                 emergency
+            </span>
+
+            <span class="material-symbols-outlined">
+                menu
             </span>
 
             <span class="material-symbols-outlined">
