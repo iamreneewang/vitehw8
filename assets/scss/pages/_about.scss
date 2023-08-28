@@ -3,6 +3,10 @@
 
     h2 {
         letter-spacing: 48px;
+
+        @include pad() {
+            letter-spacing: 40px;
+        }
     }
 
     img {
@@ -29,5 +33,18 @@
 
     p:nth-child(2) {
         max-width: 580px;
+    }
+
+    p span::before {
+        content: "";
+        position: absolute;
+        transform: translate(-50%, 0);
+        top: 50%;
+        left: 50%;
+        z-index: -1;
+        display: inline-block;
+        width: 80px;
+        height: 12px;
+        background-color: #E9E2F3;
     }
 }
