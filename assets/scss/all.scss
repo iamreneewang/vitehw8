@@ -1,7 +1,7 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
 @import './utils/utilities';
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC&family=Shrikhand&family=Saira+Extra+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@350;500;700;900&family=Shrikhand&family=Saira+Extra+Condensed&display=swap');
 
 
 @import './mixin/media.scss';
@@ -14,5 +14,6 @@
 
 @import './pages/index.scss';
 @import './pages/about.scss';
+@import './pages/contact.scss';
 
 @import "../../node_modules/bootstrap";
