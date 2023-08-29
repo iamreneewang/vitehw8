@@ -9,3 +9,14 @@
     @content;
   }
 }
+
+@mixin xl {
+  @media(max-width:1600px) {
+    @content;
+  }
+}
+
+// /////hover/////
+@mixin zoom($times) {
+  transition: ease-in-out $times;
+}

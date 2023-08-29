@@ -287,9 +287,9 @@ $cyans: (
 
 // scss-docs-start theme-color-variables
 $primary: #7000FF !default;
-$secondary: $gray-600 !default;
+$secondary: #11002D !default;
 $success: $green !default;
-$info: $cyan !default;
+$info: #AD93CF !default;
 $warning: $yellow !default;
 $danger: $red !default;
 $light: $gray-100 !default;
@@ -400,12 +400,15 @@ $spacers: (
   //48px
   54: 54px,
   //54px
+  56: $spacer * 3.5,
+  //56px
   60: $spacer * 3.75,
   //60px
   64: 64px,
   //64px
   80: 80px,
   //80px
+  142: 142px,
   144: 144px,
   160:$spacer * 10 //160px
   ) !default;
