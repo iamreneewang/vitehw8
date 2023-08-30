@@ -26,12 +26,18 @@
     letter-spacing: 1.6px;
 }
 
+
+
+
 .letter-spacing-48 {
     letter-spacing: 48px;
 }
 
 .letter-spacing-64 {
-    letter-spacing: 64px;
+    letter-spacing: 40px;
+    @media (min-width: 768px) {
+        letter-spacing: 64px;
+    }
 }
 
 a {
