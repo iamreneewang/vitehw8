@@ -12,7 +12,9 @@
     <!-- /////home///// -->
     <section class="home">
       <div class="container-wide pt-28 pt-lg-56">
-        <div class="row gx-lg-32 flex-column-reverse flex-lg-row mb-lg-56">
+        <div
+          class="row gx-lg-32 gy-32 gy-lg-0 flex-column-reverse flex-lg-row mb-lg-56"
+        >
           <div
             class="d-none d-lg-flex col-3 text-white text-bottom align-items-end"
           >
@@ -20,7 +22,7 @@
               最新消息！新版本 v15.4 釋出，搶先體驗！
             </p>
           </div>
-          <div class="home-circle col-12 col-lg-6 mb-md-40">
+          <div class="home-circle col-12 col-lg-6">
             <img
               src="../assets/images/circle.png"
               alt="ALPHABOX+circle"
@@ -28,7 +30,7 @@
             />
           </div>
           <div
-            class="home-studio col-12 col-lg-3 d-flex flex-column justify-content-between mb-32"
+            class="home-studio col-12 col-lg-3 d-flex flex-column justify-content-between"
           >
             <span class="text-white border-top border-1 border-white pt-4"
               >ALPHABOX+ STUDIO</span
@@ -119,7 +121,81 @@
       </div>
     </section>
     <!-- /////introduction///// -->
-    <section class="intro text-white position-relative">123</section>
+    <section class="intro text-white position-relative">
+      <div
+        class="container-wide border-bottom border-1 border-white pb-20 pb-lg-16"
+      >
+        <div class="intro-line w-100 mb-16 mb-lg-8"></div>
+        <h2 class="fs-24 fs-lg-48 fw-bold">
+          <p class="mb-8 mb-lg-12">什麼是</p>
+          <p>ALPHABOX+</p>
+        </h2>
+      </div>
+      <div class="container-wide pt-16 pt-lg-32 pb-60 pb-lg-52">
+        <!-- Swiper -->
+        <div class="container position-relative">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="../assets/images/carousel.png"
+                  alt="立體投影技術"
+                  class="position-relative"
+                />
+                <div
+                  class="position-absolute text-lg-end translate-middle-lg-y bottom-0 top-lg-50 end-0 m-16 mx-lg-40"
+                >
+                  <h3 class="mb-8 mb-lg-16">
+                    <p class="ff-shrikhand fs-64 fs-lg-96">01</p>
+                    <p>立體投影技術</p>
+                  </h3>
+                  <p>透過高科技立體投影技術，讓您感受真實的科技世界。</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="../assets/images/carousel.png"
+                  alt="立體投影技術"
+                  class="position-relative"
+                />
+                <div
+                  class="position-absolute text-lg-end translate-middle-lg-y bottom-0 top-lg-50 end-0 m-16 mx-lg-40"
+                >
+                  <h3 class="mb-8 mb-lg-16">
+                    <p class="ff-shrikhand fs-64 fs-lg-96">01</p>
+                    <p>立體投影技術</p>
+                  </h3>
+                  <p>透過高科技立體投影技術，讓您感受真實的科技世界。</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="../assets/images/carousel.png"
+                  alt="立體投影技術"
+                  class="position-relative"
+                />
+                <div
+                  class="position-absolute text-lg-end translate-middle-lg-y bottom-0 top-lg-50 end-0 m-16 mx-lg-40"
+                >
+                  <h3 class="mb-8 mb-lg-16">
+                    <p class="ff-shrikhand fs-64 fs-lg-96">01</p>
+                    <p>立體投影技術</p>
+                  </h3>
+                  <p>透過高科技立體投影技術，讓您感受真實的科技世界。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next d-none d-xl-block position-absolute">
+            <img src="../assets/images/line_end_arrow_notch.svg" alt="next" />
+          </div>
+          <div class="swiper-button-prev d-none d-xl-block position-absolute">
+            <img src="../assets/images/line_end_arrow_notch.svg" alt="prev" />
+          </div>
+        </div>
+        <div class="intro-line w-100 mt-32"></div>
+      </div>
+    </section>
     <!-- section -->
     <div style="background-color: #1f0f39">
       <div class="container py-md-144 pt-60 pb-80">
@@ -290,5 +366,14 @@
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
