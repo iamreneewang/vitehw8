@@ -31,6 +31,9 @@
 
 .letter-spacing-48 {
     letter-spacing: 48px;
+    @media (min-width: 768px) {
+        letter-spacing: 40px;
+    }
 }
 
 .letter-spacing-64 {
