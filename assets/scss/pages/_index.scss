@@ -53,17 +53,25 @@
   }
 
   .img-name {
-    margin-top: 80px;
+    margin-top: 0px;
+
+    @include xl() {
+      margin-top: 80px;
+    }
 
     @include pad() {
-      margin-top: 0;
+      margin-top: 142px;
     }
 
     img {
+      object-fit: cover;
 
       @include xl() {
         height: 580px;
-        object-fit: cover;
+      }
+
+      @include pad() {
+        height: 351px;
       }
     }
   }
@@ -95,17 +103,21 @@
 
   &-title {
     transform: translate(-50%, 0);
-    top: 0;
+    top: -50px;
     left: 50%;
+
+    @media (min-width:1920px) {
+      top: 0px;
+    }
 
     @include xl() {
       transform: translate(-50%, -100%);
-      top: 60px;
+      top: 50px;
     }
 
     @include pad() {
       transform: translate(-50%, -100%);
-      top: -32px;
+      top: 100px;
     }
 
     span {
@@ -169,14 +181,27 @@
 
 // /////swiper/////
 .swiper {
-  &-slide {
+  @include xl() {
+    width: 80%;
+  }
+
+  @include pad() {
+    width: 100%;
+  }
+
+  &-wrapper {
+    margin: 0 auto;
     width: 100%;
     height: 560px;
-
 
     @include pad() {
       height: 351px;
     }
+  }
+
+  &-slide {
+    width: 100%;
+    height: 100%;
 
     img {
       width: 100%;
@@ -198,8 +223,18 @@
     transform: translate(-100%, 0);
     left: -50px;
 
+    @include xl() {
+      width: 120px;
+      transform: translate(-100%, 0);
+      left: 100px;
+    }
+
     img {
       transform: rotate(180deg);
+
+      @include xl() {
+        width: 120px;
+      }
     }
   }
 
@@ -209,5 +244,17 @@
     display: block;
     transform: translate(100%, 0);
     right: -50px;
+
+    @include xl() {
+      width: 120px;
+      transform: translate(100%, 0);
+      right: 100px;
+    }
+
+    img {
+      @include xl() {
+        width: 120px;
+      }
+    }
   }
 }
