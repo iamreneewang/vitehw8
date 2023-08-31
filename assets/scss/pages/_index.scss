@@ -53,7 +53,13 @@
   }
 
   .img-name {
-    img:nth-child(1) {
+    margin-top: 80px;
+
+    @include pad() {
+      margin-top: 0;
+    }
+
+    img {
 
       @include xl() {
         height: 580px;
@@ -94,7 +100,7 @@
 
     @include xl() {
       transform: translate(-50%, -100%);
-      top: -24px;
+      top: 60px;
     }
 
     @include pad() {
