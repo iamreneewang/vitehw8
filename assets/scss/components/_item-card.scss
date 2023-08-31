@@ -39,7 +39,11 @@
 
 
     .card {
-        padding: 24px 12px;
+        // padding: 24px 12px;
+        padding-top: 24px;
+        padding-bottom: 56px;
+        padding-right: 40px;
+        padding-left: 40px;
         background-color: transparent;
         background-blend-mode: darken;
         background-size: cover;
@@ -63,9 +67,9 @@
         }
 
 
-         @media (min-width: 768px) {
-             padding: 24px 40px 56px;
-         }
+        @media (min-width: 768px) {
+            padding: 24px 40px 56px;
+        }
 
         &:hover {
             background-color: rgba(0, 0, 0, 0.5);
