@@ -59,13 +59,13 @@ a:hover {
     opacity: 0.8;
 }
 
-.container-wide {
-    padding-left: 80px;
-    padding-right: 80px;
+// .container-wide {
+//     padding-left: 80px;
+//     padding-right: 80px;
 
 
-    @include pad() {
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-}
+//     @include pad() {
+//         padding-left: 12px;
+//         padding-right: 12px;
+//     }
+// }
