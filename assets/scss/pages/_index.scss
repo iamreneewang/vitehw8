@@ -134,6 +134,13 @@
   }
 }
 
+
+
+// ------------以下勿刪除--------------------------
+// ------------以下勿刪除--------------------------
+// ------------以下勿刪除--------------------------
+
+
 // /////introduction/////
 .intro {
   &::before {
@@ -168,6 +175,7 @@
 
   &-line:nth-child(2) {
     background: linear-gradient(90deg, #11002D 0%, #7000FF 100%);
+    width:80px;
   }
 
   h2 p {
@@ -179,108 +187,86 @@
   }
 }
 
-// /////swiper/////
-.swiper {
-  @include xl() {
-    width: 80%;
-  }
-
-  @include pad() {
-    width: 100%;
-  }
-
-  &-wrapper {
-    margin: 0 auto;
-    width: 100%;
-    height: 560px;
-
-    @include pad() {
-      height: 351px;
-    }
-  }
-
-  &-slide {
-    width: 100%;
-    height: 100%;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center center;
-    }
-  }
-
-  &-button-next::after,
-  &-button-prev::after {
-    content: "";
-  }
-
-  &-button-prev {
-    width: 180px;
-    height: 48px;
-    display: block;
-    transform: translate(-100%, 0);
-    left: -50px;
-
-    @include xl() {
-      width: 120px;
-      transform: translate(-100%, 0);
-      left: 100px;
-    }
-
-    img {
-      transform: rotate(180deg);
-
-      @include xl() {
-        width: 120px;
-      }
-    }
-  }
-
-  &-button-next {
-    width: 180px;
-    height: 48px;
-    display: block;
-    transform: translate(100%, 0);
-    right: -50px;
-
-    @include xl() {
-      width: 120px;
-      transform: translate(100%, 0);
-      right: 100px;
-    }
-
-    img {
-      @include xl() {
-        width: 120px;
-      }
-    }
-  }
-}
-
 .bg-primary-dark {
   background-color: #380c7e;
 }
 
+// --------------------intro swiper----------------------------
+.alphabox {
+  height: 351px;
+  background-image: url(https://hackmd.io/_uploads/Syn6HV7Tn.png);
+  background-size: cover;
+  background-position: center;
+  padding: 16px;
+  @media (min-width: 768px) {
+    height: 560px;
+    padding-right: 40px;
+  }
 
+  &-title {
+    letter-spacing: 24px;
+    @media (min-width: 768px) {
+      letter-spacing: 32px;
+      margin-right: -32px;
+    }
+  }
+}
 
+.rotate {
+  rotate: 180deg;
+}
+
+// 箭頭
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  position: initial;
+  margin-top: 0;
+  width: auto;
+  height: auto;
+
+  &::after {
+    content: "";
+  }
+}
+
+// --------------------intro swiper----------------------------
+// --------------------news----------------------------
+.news-col{
+  border-left: 0; 
+
+  @media (min-width: 767px) {
+    border-left:0;
+  }
+
+  @media (min-width: 992px) {
+    border-left: 1px solid white; 
+  }
+}
+
+// --------------------news----------------------------
 // --------------------share----------------------------
 .share {
   background: radial-gradient(#000000, #28085c 70%)
 }
 
 .share-background {
-  font-size: 400px;
+  font-size: 128px;
   color: rgba(255, 255, 255, 0.04);
-  line-height: 0.5;
-  bottom: -30px;
-  margin-left: 35px;
+  bottom: -70px;
+  margin-left: -20px;
+
+  @media (min-width: 767px) {
+    font-size: 400px;
+    line-height: 0.5;
+    bottom: -40px;
+    margin-left: 35px;
+  }
 }
 
 .share {
   .swiper-slide {
-    max-width: 351px;
+    // max-width: 351px;
 
     @media (min-width: 767px) {
       max-width: 416px;
@@ -289,6 +275,8 @@
 
 
   .share-swiper {
+    padding-left:12px;
+    padding-right:12px;
     .swiper-wrapper {
       margin-bottom: 0;
       height: 416px;
@@ -302,10 +290,6 @@
   .swiper-scrollbar-drag {
     background: #ffffff !important;
   }
-
-  .share-scroll {
-    margin-bottom: 124px;
-  }
 }
 
 .share {
@@ -318,19 +302,38 @@
 
   .container-fluid {
     padding-left: 12px;
-    padding-right: 0px;
+    padding-right: 12px;
+
+    @media (min-width: 767px) {
+      padding:0 12px;
+    }
 
     @media (min-width: 992px) {
-      padding-left: 300px;
+      padding-left: 16%;
+      padding-right: 0px;
+    }
+  }
+
+  .container-fluid .swiper {
+    margin: 0 auto;
+  }
+
+  .swiper-wrapper {
+    height: 100% !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  
+  
+    @media (min-width: 767px) {
+      height: 416px !important;
+      flex-direction: row;
     }
   }
 }
 
 
-.swiper {
-  // border:2px solid red;
-  margin: 0 auto;
-}
+
 
 .share-number::before {
   width: 70%;
@@ -345,16 +348,5 @@
   /* 重點 */
 }
 
-.swiper-wrapper {
-  height: 100% !important;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
 
-
-  @media (min-width: 767px) {
-    height: 416px !important;
-    flex-direction: row;
-  }
-}
 // --------------------share----------------------------
