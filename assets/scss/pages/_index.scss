@@ -1,26 +1,19 @@
 .home {
-  // --------------------position: absolute; 背景-------------------
-  background-image: url("/assets/images/home_background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  height: 880px;
 
+  // --------------------首頁背景-------------------
+  &::before {
+    content: "";
+    background-image: url("/assets/images/home_background.png");
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
 
   @include mobile() {
     position: unset;
-    height: 1800px;
-  }
-
-  .home-box {
-    position: absolute;
-    top: 0px;
-    z-index: 5;
-
-    @include mobile() {
-      position: unset;
-      z-index: 5;
-    }
+    height: 100%;
   }
 
   // --------------------首頁circle動畫-------------------
@@ -64,7 +57,7 @@
   .img-name {
     &:first-child {
       @include pad() {
-        margin-top: 110px;
+        margin-top: 32px;
       }
 
       @include mobile() {
@@ -116,7 +109,7 @@
 
   &-title {
     transform: translate(-50%, 0);
-    top: -10px;
+    top: 0px;
     left: 50%;
 
     @include xl() {
@@ -172,9 +165,10 @@
     display: block;
     width: 50%;
     height: 100%;
-    background-image: url('/assets/images/carousel.png');
+    background: url('/assets/images/carousel.png');
     background-size: cover;
     background-position: center center;
+    opacity: .6;
     filter: blur(12px);
 
     @include mobile() {
