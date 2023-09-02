@@ -17,27 +17,123 @@
   }
 
   // --------------------首頁circle動畫-------------------
-  &-circle {
-    img {
-      max-width: 196px;
-      animation-name: circle;
-      animation-duration: 4s;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
-      animation-fill-mode: both;
+
+  .box {
+    position: relative;
+    left: 0%;
+    top: 0;
+    height: 200px;
+    width: 200px;
+    animation: rotate_circle 10s infinite linear;
+  }
+
+  .item {
+    top: 35%;
+    left: 35%;
+    color: white;
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    transform: rotate(var(--a, 0deg)) translate(4.5em) rotateX(40deg);
+    font: 900 1.2em/3em trebuchet ms, tahoma, verdana, sans-serif;
+    text-align: center;
+  }
+
+  .item:nth-child(2) {
+    --a: 20deg;
+  }
+
+  .item:nth-child(3) {
+    --a: 40deg;
+  }
+
+  .item:nth-child(4) {
+    --a: 60deg;
+  }
+
+  .item:nth-child(5) {
+    --a: 80deg;
+  }
+
+  .item:nth-child(6) {
+    --a: 100deg;
+  }
+
+  .item:nth-child(7) {
+    --a: 120deg;
+  }
+
+  .item:nth-child(8) {
+    --a: 140deg;
+  }
+
+  .item:nth-child(9) {
+    --a: 160deg;
+  }
+
+  .item:nth-child(10) {
+    --a: 180deg;
+  }
+
+  .item:nth-child(11) {
+    --a: 200deg;
+  }
+
+  .item:nth-child(12) {
+    --a: 220deg;
+  }
+
+  .item:nth-child(13) {
+    --a: 240deg;
+  }
+
+  .item:nth-child(14) {
+    --a: 260deg;
+  }
+
+  .item:nth-child(15) {
+    --a: 280deg;
+  }
+
+  .item:nth-child(16) {
+    --a: 300deg;
+  }
+
+  .item:nth-child(17) {
+    --a: 320deg;
+  }
+
+  .item:nth-child(18) {
+    --a: 340deg;
+  }
+
+  @keyframes rotate_circle {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
     }
   }
 
-  @keyframes circle {
-    0% {
-      rotate: 0deg
-    }
-
-    100% {
-      rotate: 360deg
-    }
+  .circle {
+    background-color: white;
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
+  .rotate {
+    transform: rotate(270deg);
+  }
+
+  // --------------------首頁circle動畫-------------------
+  
   &-studio {
     letter-spacing: 1.6px;
   }
