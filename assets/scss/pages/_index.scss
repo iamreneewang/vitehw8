@@ -114,11 +114,11 @@
 
     @include xl() {
       transform: translate(-50%, -100%);
-      top: 80px;
+      top: 75px;
     }
 
     @include l() {
-      top: 50px;
+      top: 45px;
     }
 
     @include mobile() {
