@@ -37,7 +37,8 @@
 }
 
 .letter-spacing-48 {
-    letter-spacing: 40px; 
+    letter-spacing: 40px;
+
     @media (min-width: 768px) {
         letter-spacing: 48px;
     }
@@ -53,10 +54,39 @@
 
 a {
     cursor: pointer;
+
+    &:hover {
+        opacity: 0.9;
+    }
 }
 
-a:hover {
-    opacity: 0.8;
-    color:#828282;
+.more:hover {
+    transform: scale(0.98) !important;
 }
 
+.nav-link:hover {
+    opacity: 0.9;
+    color: gray !important;
+}
+
+.btn-submit-primary:hover {
+    color: #7000FF !important;
+    background-color: white !important;
+
+    .material-symbols-outlined {
+        color: #7000FF !important;
+        transition: transform 0.3s;
+        transform: rotate(180deg);
+    }
+}
+
+
+.btn-submit-secondary:hover {
+    color: #7000FF !important;
+
+    .material-symbols-outlined {
+        color: #7000FF !important;
+        transition: transform 0.3s;
+        transform: rotate(180deg);
+    }
+}
