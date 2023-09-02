@@ -389,6 +389,7 @@ $spacers: (
   25: 25px,
   28: 28px,
   32: $spacer * 2,
+  34: 34px,
   //32px
   36: $spacer * 2.25,
   //36px
@@ -637,7 +638,9 @@ $font-sizes: (
   48: 48px,
   64: 64px,
   80: 80px,
-  96: 96px) !default;
+  96: 96px,
+  128: 128px,
+  400: 400px) !default;
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables

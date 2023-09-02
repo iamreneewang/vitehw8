@@ -1,69 +1,44 @@
 .item-card {
 
-    .fs-md-32 {
-        @media (min-width: 768px) {
-            font-size: 32px;
-        }
-    }
-
-    .fs-m {
-        font-size: 128px;
-    }
-
-    .fs-md-l {
-        @media (min-width: 768px) {
-            font-size: 400px;
-        }
-    }
-
-    .mb-16 {
-        margin-bottom: 16px;
-    }
-
-    .mb-18 {
-        margin-bottom: 18px;
-    }
-
-    .mb-md-20 {
-        @media (min-width: 768px) {
-            margin-bottom: 20px;
-        }
-    }
-
-    .mb-md-80 {
-        @media (min-width: 768px) {
-            margin-bottom: 80px;
-        }
-    }
-
-
-
     .card {
-        // padding: 24px 12px;
-        padding-top: 24px;
-        padding-bottom: 56px;
-        padding-right: 40px;
-        padding-left: 40px;
-        background-color: transparent;
+        min-height: 406px;
+        padding: 24px 40px 56px 40px;
+        background-color: rgba(0, 0, 0, 0.5);
         background-blend-mode: darken;
         background-size: cover;
         background-position: center;
         transition: all 1s;
 
         &-1 {
-            background-image: url(/assets/images/diane.png);
+            background-image: url(/assets/images/diane_vertical.png);
+
+            @media (min-width: 768px) {
+                background-image: url(/assets/images/diane.png);
+            }
         }
 
-        &-2 {
-            background-image: url(/assets/images/felix.png);
+        &-2 {            
+            background-image: url(/assets/images/felix_vertical.png);
+
+            @media (min-width: 768px) {
+                background-image: url(/assets/images/felix.png);
+            }
         }
 
         &-3 {
-            background-image: url(/assets/images/karina.png);
+            background-image: url(/assets/images/karina_verticalgle.png);
+
+            @media (min-width: 768px) {
+                background-image: url(/assets/images/karina.png);
+            }
         }
 
-        &-4 {
-            background-image: url(/assets/images/vito.png);
+        &-4 {           
+            background-image: url(/assets/images/vito_square2.png);
+
+            @media (min-width: 768px) {
+                background-image: url(/assets/images/vito.png);
+            }
         }
 
 
@@ -71,9 +46,8 @@
             padding: 24px 40px 56px;
         }
 
-        &:hover {
-            background-color: rgba(0, 0, 0, 0.5);
-
+        &:hover {      
+            background-color: transparent;
         }
 
         @media (min-width: 768px) {
