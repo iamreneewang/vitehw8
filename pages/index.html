@@ -245,8 +245,7 @@
                 榮幸地宣布，ALPHABOX+
                 已成功完成最新一代的升級！本次升級包括提升投影解析度、優化語音辨識技術，以及擴充情感識別功能。<br />歡迎您了解本次升級帶來的更為卓越的性能！
               </p>
-              <a href="#" class="more ps-0 ps-lg-12"><img
-                  src="/assets/images/line_end_arrow_notch.png"
+              <a href="#" class="more ps-0 ps-lg-12"><img src="/assets/images/line_end_arrow_notch.png"
                   alt="line_end_arrow_notch" />
               </a>
 
@@ -271,9 +270,7 @@
             </p>
             <div class="d-flex mt-12 mb-md-40">
               <a href="#" class="more">
-                <img
-                  src="/assets/images/line_end_arrow_notch_sm.png"
-                  alt="line_end_arrow_notch" />
+                <img src="/assets/images/line_end_arrow_notch_sm.png" alt="line_end_arrow_notch" />
               </a>
             </div>
           </div>
@@ -292,8 +289,7 @@
               更趨完善，我們不懈地研發創新功能。近期，我們新推出智慧家居控制功能，使您的機器人能更便利地協助您操作家中各類智能設備。
             </p>
             <div class="d-flex mt-12 mb-md-40 mb-32">
-              <a href="#" class="more"><img
-                  src="/assets/images/line_end_arrow_notch_sm.png"
+              <a href="#" class="more"><img src="/assets/images/line_end_arrow_notch_sm.png"
                   alt="line_end_arrow_notch" />
               </a>
             </div>
@@ -483,7 +479,7 @@
                 <h5 class="h6 fw-bold">知識型</h5>
                 <p>學術領導/知識分享/智能問答</p>
               </div>
-              <img src="/assets/images/line_end_arrow_notch_card.png" alt="arrow"/>
+              <img src="/assets/images/line_end_arrow_notch_card.png" alt="arrow" />
             </div>
           </a>
         </li>
@@ -499,7 +495,7 @@
                 <h5 class="h6 fw-bold">娛樂型</h5>
                 <p>音樂播放/語音互動/遊戲陪伴</p>
               </div>
-              <img src="/assets/images/line_end_arrow_notch_card.png" alt="arrow"  class="img-fluid" />
+              <img src="/assets/images/line_end_arrow_notch_card.png" alt="arrow" class="img-fluid" />
             </div>
           </a>
         </li>
@@ -515,7 +511,7 @@
                 <h5 class="h6 fw-bold">生活型</h5>
                 <p>情感識別/心情分析/心靈支持</p>
               </div>
-              <img src="/assets/images/line_end_arrow_notch_card.png" alt="arrow"/>
+              <img src="/assets/images/line_end_arrow_notch_card.png" alt="arrow" />
             </div>
           </a>
         </li>
@@ -531,7 +527,7 @@
                 <h5 class="h6 fw-bold">情感型</h5>
                 <p>情感識別/心情分析/心靈支持</p>
               </div>
-              <img src="/assets/images/line_end_arrow_notch_card.png" alt="arrow"/>
+              <img src="/assets/images/line_end_arrow_notch_card.png" alt="arrow" />
             </div>
           </a>
         </li>
@@ -563,10 +559,16 @@
         const swiper = new Swiper(".share-swiper", {
           slidesPerView: 1,
           spaceBetween: 16,
-          enabled: false,
+          enabled: true,
+          // scrollbar: {
+          //   el: ".swiper-scrollbar",
+          // },
+
           scrollbar: {
-            el: ".swiper-scrollbar",
+            el: '.swiper-scrollbar',
+            draggable: true,
           },
+
           breakpoints: {
             768: {
               slidesPerView: 2,

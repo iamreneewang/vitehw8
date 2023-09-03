@@ -60,21 +60,22 @@ a {
     }
 }
 
+
+
 .more:hover {
     transform: scale(0.98) !important;
 }
 
 .nav-link:hover {
     opacity: 0.9;
-    color: gray !important;
 }
 
 .btn-submit-primary:hover {
-    color: #7000FF !important;
+    color: $primary !important;
     background-color: white !important;
 
     .material-symbols-outlined {
-        color: #7000FF !important;
+        color:$primary !important;
         transition: transform 0.3s;
         transform: rotate(180deg);
     }
@@ -82,11 +83,74 @@ a {
 
 
 .btn-submit-secondary:hover {
-    color: #7000FF !important;
+    color: $primary!important;
 
     .material-symbols-outlined {
-        color: #7000FF !important;
+        color:$primary !important;
         transition: transform 0.3s;
         transform: rotate(180deg);
+    }
+}
+
+
+//nav hover
+li {
+    a {
+        position: relative;
+        display: block;
+        margin: 0 0px;
+        padding: 5px 10px;
+        color: white;
+        transition: .5s;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            width: 10px;
+            height: 10px;
+            border: solid 2px white;
+            border-width: 0 0 2px 2px;
+            opacity: 0;
+            transition: .5s;
+        }
+
+        &:hover:before {
+            bottom: -8px;
+            left: -8px;
+            opacity: 1;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 10px;
+            height: 10px;
+            border: solid 2px white;
+            border-width: 2px 2px 0 0;
+            opacity: 0;
+            transition: .5s;
+        }
+
+        &:hover:after {
+            top: -8px;
+            right: -8px;
+            opacity: 1;
+        }
+
+        &:hover {
+            background: white;
+            color: black !important;
+        }
+    }
+}
+
+//footer hover
+footer {
+    a:hover {
+      color: $primary !important;;
     }
 }
