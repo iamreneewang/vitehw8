@@ -6,12 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>聯絡我們</title>
-  <script type="module" crossorigin src="/vitehw8/assets/main-2975cd43.js"></script>
-  <link rel="stylesheet" href="/vitehw8/assets/main-4794cc54.css">
+  <script type="module" crossorigin src="/vitehw8/assets/main-f25a02a4.js"></script>
+  <link rel="stylesheet" href="/vitehw8/assets/main-87bc5d3a.css">
 </head>
 
 <body>
-  <header class="bg-primary border-bottom border-1 border-white  position-relative">
+  <link rel="shortcut icon" href="/vitehw8/assets/ALPHABOX_-3f0e3ca9.ico">
+<header class="bg-primary border-bottom border-1 border-white  position-relative">
   <div class="container">
     <div class="d-flex align-items-center justify-content-between py-lg-16 mx-auto">
       <div class="d-flex align-items-center">
@@ -21,7 +22,7 @@
       </div>
 
 
-      <ul class="list-unstyled d-lg-flex align-items-center mb-0 gap-md-40 d-md-none d-none">
+      <ul class="list-unstyled d-lg-flex align-items-center mb-0 gap-xl-40 gap-lg-0 d-md-none d-none">
         <li><a href="#" class="text-white fw-500">產品</a></li>
         <li><a href="about.html" class="text-white fw-500">關於我們</a></li>
         <li><a href="#" class="text-white fw-500">最新消息</a></li>
@@ -109,23 +110,23 @@
 
             <form class="mb-md-160 mb-60">
               <div class="form-floating mb-16">
-                <input type="text" class="form-control" id="name" placeholder="姓名">
-                <label for="name" class="fs-md-20 fs-16 fw-bold dark-1F0F39">姓名</label>
+                <input type="text" class="form-control" id="user_name" placeholder="姓名" name="user_name">
+                <label for="user_name" class="fs-md-20 fs-16 fw-bold dark-1F0F39">姓名</label>
               </div>
               <div class="form-floating mb-16">
-                <input type="email" class="form-control" id="email2" placeholder="EMAIL">
-                <label for="email2" class="fs-md-20 fs-16 fw-bold dark-1F0F39">EMAIL</label>
+                <input type="email" class="form-control" id="user_email" placeholder="EMAIL" name="user_email">
+                <label for="user_email" class="fs-md-20 fs-16 fw-bold dark-1F0F39">EMAIL</label>
               </div>
               <div class="form-floating mb-16">
-                <input type="text" class="form-control" id="phone" placeholder="聯絡電話">
-                <label for="phone" class="fs-md-20 fs-16 fw-bold dark-1F0F39">聯絡電話</label>
+                <input type="text" class="form-control" id="user_phone" placeholder="聯絡電話" name="user_phone">
+                <label for="user_phone" class="fs-md-20 fs-16 fw-bold dark-1F0F39">聯絡電話</label>
               </div>
               <div class="form-floating mb-16">
-                <textarea class="form-control" placeholder="COMMENTS" id="comments2"
+                <textarea class="form-control" placeholder="COMMENTS" id="user_comments" 
                   style="height: 120px; resize: none;"></textarea>
-                <label for="comments2" class="fs-md-20 fs-16 dark-1F0F39">Comments</label>
+                <label for="user_comments" class="fs-md-20 fs-16 dark-1F0F39">Comments</label>
               </div>
-              <button
+              <button id="btn_send"
                 class="btn btn-submit-primary w-100 btn-primary py-8 gap-4 d-flex align-items-center rounded-1 fw-500 justify-content-center fs-md-24 fs-16">
                 <span class="material-symbols-outlined fs-24 text-white align-middle"> point_scan </span>
                 送出
