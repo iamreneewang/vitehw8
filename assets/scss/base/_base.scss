@@ -94,59 +94,62 @@ a {
 
 
 //nav hover
-li {
-    a {
-        position: relative;
-        display: block;
-        margin: 0 0px;
-        padding: 5px 10px;
-        color: white;
-        transition: .5s;
-
-        &::before {
-            content: '';
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
-            width: 10px;
-            height: 10px;
-            border: solid 2px white;
-            border-width: 0 0 2px 2px;
-            opacity: 0;
+header, .hamburger-menu, .social-medial{
+    li {
+        a {
+            position: relative;
+            display: block;
+            margin: 0 0px;
+            padding: 5px 10px;
+            color: white;
             transition: .5s;
-        }
-
-        &:hover:before {
-            bottom: -8px;
-            left: -8px;
-            opacity: 1;
-        }
-
-        &:after {
-            content: '';
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            width: 10px;
-            height: 10px;
-            border: solid 2px white;
-            border-width: 2px 2px 0 0;
-            opacity: 0;
-            transition: .5s;
-        }
-
-        &:hover:after {
-            top: -8px;
-            right: -8px;
-            opacity: 1;
-        }
-
-        &:hover {
-            background: white;
-            color: black !important;
+    
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                width: 10px;
+                height: 10px;
+                border: solid 2px white;
+                border-width: 0 0 2px 2px;
+                opacity: 0;
+                transition: .5s;
+            }
+    
+            &:hover:before {
+                bottom: -8px;
+                left: -8px;
+                opacity: 1;
+            }
+    
+            &:after {
+                content: '';
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                width: 10px;
+                height: 10px;
+                border: solid 2px white;
+                border-width: 2px 2px 0 0;
+                opacity: 0;
+                transition: .5s;
+            }
+    
+            &:hover:after {
+                top: -8px;
+                right: -8px;
+                opacity: 1;
+            }
+    
+            &:hover {
+                background: white;
+                color: black !important;
+            }
         }
     }
 }
+
 
 //footer hover
 footer {
