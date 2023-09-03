@@ -111,7 +111,7 @@
             </a>
           </div>
           <div class="home-title col-12 col-md-12 col-lg-6 mx-auto position-absolute text-white">
-            <p class="d-flex justify-content-between fs-20 fs-md-32 px-12">
+            <p class="d-flex justify-content-between fs-20 fs-lg-24 fs-xl-32 px-12">
               <span>A</span>
               <span>L</span>
               <span>P</span>
@@ -149,7 +149,7 @@
             <!--  左箭頭  -->
             <div class="col-1 d-none d-lg-block">
               <div class="swiper-button-prev">
-                <img src="https://hackmd.io/_uploads/BJUmHUm6n.png" alt="left arrow" class="img-fluid rotate" />
+                <img src="/assets/images/swiper_arrow.png" alt="left arrow" class="img-fluid rotate" />
               </div>
             </div>
             <!--   Slides   -->
@@ -204,7 +204,7 @@
             <!--  右箭頭  -->
             <div class="col-1 d-none d-lg-block">
               <div class="swiper-button-next">
-                <img src="https://hackmd.io/_uploads/BJUmHUm6n.png" alt="right arrow" class="img-fluid" />
+                <img src="/assets/images/swiper_arrow.png" alt="right arrow" class="img-fluid" />
               </div>
             </div>
           </div>
@@ -442,17 +442,17 @@
               emergency
             </span>
             <div class="form-floating mb-16">
-              <input type="email" class="form-control align-middle" id="email" placeholder="EMAIL" />
+              <input type="email" class="form-control align-middle" id="email" placeholder="EMAIL" name="email"/>
               <label for="email" class="fs-20 dark-1F0F39">Email address</label>
             </div>
             <div class="form-floating mb-16">
-              <textarea class="form-control" placeholder="COMMENTS" id="comments"
+              <textarea class="form-control" placeholder="COMMENTS" id="comments" name="comments"
                 style="height: 120px; resize: none"></textarea>
               <label for="comments" class="fs-20 dark-1F0F39">Comments</label>
             </div>
           </div>
           <div class="col-md-4 ms-md-auto col-12">
-            <button
+            <button id="bt_submit" 
               class="btn btn-submit-primary w-100 btn-primary py-8 gap-4 d-flex align-items-center rounded-1 fw-500 justify-content-center">
               <span class="material-symbols-outlined fs-24 text-white align-middle">
                 point_scan
@@ -560,9 +560,6 @@
           slidesPerView: 1,
           spaceBetween: 16,
           enabled: true,
-          // scrollbar: {
-          //   el: ".swiper-scrollbar",
-          // },
 
           scrollbar: {
             el: '.swiper-scrollbar',
@@ -582,10 +579,6 @@
           // 使 swiper 可以使用滑鼠滾輪捲動
           mousewheel: true,
         });
-
-        if (slidesPerView < 3) {
-          swiper.disable();
-        }
       </script>
 </body>
 

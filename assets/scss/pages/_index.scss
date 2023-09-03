@@ -210,11 +210,15 @@
 
     @include xl() {
       transform: translate(-50%, -100%);
-      top: 75px;
+      top: 50px;
     }
 
     @include l() {
-      top: 45px;
+      top: 20px;
+    }
+
+    @include pad() {
+      top: 25px;
     }
 
     @include mobile() {
