@@ -133,7 +133,7 @@
   }
 
   // --------------------首頁circle動畫-------------------
-  
+
   &-studio {
     letter-spacing: 1.6px;
   }
@@ -385,6 +385,7 @@
 
 .share {
   .swiper-slide {
+    cursor: pointer;
 
     @media (min-width: 767px) {
       max-width: 416px;
@@ -401,7 +402,13 @@
   }
 
   .swiper-scrollbar {
-    background: rgba(255, 255, 255, 0.2);
+    display: none;
+
+    @media (min-width: 767px) {
+      display: block;
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.2);
+    }
   }
 
   .swiper-scrollbar-drag {
