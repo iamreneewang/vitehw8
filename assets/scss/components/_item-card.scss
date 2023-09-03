@@ -1,13 +1,38 @@
 .item-card {
 
+    li:not(:last-child) {
+        border: none;
+
+        @media (min-width: 768px) {
+            border-right: 1px solid white;
+        }
+    }
+
+
     .card {
-        min-height: 406px;
-        padding: 24px 40px 56px 40px;
+        padding: 24px 12px 20px 12px;
         background-color: rgba(0, 0, 0, 0.5);
         background-blend-mode: darken;
         background-size: cover;
         background-position: center;
         transition: all 1s;
+
+        @media (min-width: 768px) {
+            padding: 24px 40px 56px 40px;
+        }
+
+        h4 {
+
+            padding-bottom: 23px;
+
+            @media (min-width: 768px) {
+                padding-top: 67px;
+                padding-bottom: 68px;
+            }
+        }
+
+
+
 
         &-1 {
             background-image: url(/assets/images/diane_vertical.png);
@@ -17,7 +42,7 @@
             }
         }
 
-        &-2 {            
+        &-2 {
             background-image: url(/assets/images/felix_vertical.png);
 
             @media (min-width: 768px) {
@@ -33,7 +58,7 @@
             }
         }
 
-        &-4 {           
+        &-4 {
             background-image: url(/assets/images/vito_square2.png);
 
             @media (min-width: 768px) {
@@ -46,7 +71,7 @@
             padding: 24px 40px 56px;
         }
 
-        &:hover {      
+        &:hover {
             background-color: transparent;
         }
 
